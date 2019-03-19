@@ -5,7 +5,7 @@ class CreateProducts < ActiveRecord::Migration[5.2]
       t.text :description
       t.integer :price
       t.references :user, foreign_key: true
-      t.boolean :sold
+      t.boolean :sold, default: false
 
       t.timestamps
     end
